@@ -89,7 +89,7 @@
   color: $contacts-color;
   transition: color $transf-hover;
   &:hover,
-  :focus {
+  &:focus {
     color: $hover-color;
     transition: color $transf-hover;
   }

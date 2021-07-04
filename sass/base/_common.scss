@@ -5,8 +5,8 @@
 
 body {
   font-family: 'roboto', sans-serif;
-  background: var(--fons-html);
-  color: var(--title-color);
+  background: $fons-html;
+  color: $fons-title-color;
 }
 
 a {

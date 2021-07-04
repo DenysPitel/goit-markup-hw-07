@@ -1,0 +1,191 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $modal-back;
+  transition: $transf-hover;
+}
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  padding: 40px;
+  min-width: 528px;
+  min-height: 581px;
+  transition: transform $transf-hover;
+  background-color: $fons-html;
+}
+
+.btn-modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: fill $transf-hover;
+  background: $fons-html;
+  fill: $text-color;
+  &:hover {
+    fill: $hover-color;
+    transition: fill $transf-hover;
+  }
+}
+
+.icon-btn-close {
+  position: absolute;
+  transform: translate3d(-50%, -50%, 0);
+  width: 11px;
+  height: 11px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+
+.modal-form-icon-lab {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.modal-form-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167em;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+  color: $contacts-color;
+}
+
+.modal-form-inp {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  transition: border $transf-hover;
+  color: $text-color;
+  &:hover + .modal-form-icon,
+  &:focus + .modal-form-icon {
+    color: $hover-color;
+  }
+}
+
+.modal-form-icon {
+  position: absolute;
+  top: 29px;
+  left: 12px;
+  fill: currentColor;
+  transition: fill $transf-hover;
+}
+
+.modal-form-comment {
+  font-size: 14px;
+  line-height: 1.143em;
+  letter-spacing: 0.01em;
+  resize: none;
+  height: 120px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  margin-top: -10px;
+  outline: none;
+  transition: border $transf-hover;
+  &::placeholder {
+    color: $modal-form-comm;
+  }
+}
+
+.modal-form-inp:hover,
+.modal-form-inp:focus,
+.modal-form-comment:hover,
+.modal-form-comment:focus {
+  border-color: $hover-color;
+}
+
+/* Modal checkbox
+=================== */
+
+.modal-form-check-cont {
+  display: inline-block;
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+.modal-form-checkbox {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 15px;
+  border: 2px solid $text-color;
+  border-radius: 2px;
+  transition: border $transf-hover;
+}
+
+.modal-form-check-cont:hover > .modal-form-checkbox,
+.modal-form-check-cont:focus > .modal-form-checkbox {
+  border-color: $hover-color;
+}
+
+.modal-form-check-inp:checked + .modal-form-checkbox {
+  background-color: $hover-color;
+  border-color: $hover-color;
+}
+
+.modal-form-checkbox-icon {
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 11px;
+  fill: $fons-html;
+}
+
+.modal-form-chek-text {
+  display: inline-block;
+  padding-left: 4px;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: $contacts-color;
+}
+
+.m-form-checkbox-url {
+  color: $hover-color;
+}
+
+.modal-form-but {
+  display: block;
+  align-self: center;
+  padding: 10px 55px 10px 56px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}

@@ -1,0 +1,29 @@
+.title-but,
+.modal-form-but {
+  font-weight: 700;
+  line-height: 1.9em;
+  padding: 10px 32px;
+  background: $hover-color;
+  color: $fons-html;
+}
+
+.title-but,
+.work-but,
+.modal-form-but {
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  font-family: inherit;
+  cursor: pointer;
+  border: transparent $hover-color;
+  transition: background-color $transf-hover;
+}
+
+.title-but:hover,
+.title-but:focus,
+.modal-form-but:hover,
+.modal-form-but:focus {
+  background-color: $but-hover-color;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)), drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: background-color $transf-hover;
+}

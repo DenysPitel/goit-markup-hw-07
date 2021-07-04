@@ -1,0 +1,45 @@
+.foot-cocial-sect {
+  margin-left: 72px;
+}
+
+.foot-name,
+.foot-form-name {
+  margin-bottom: 20px;
+  color: $fons-html;
+}
+
+.foot-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.foot-icon-elem:not(:first-child) {
+  margin-left: 10px;
+}
+
+.foot-icon-url {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: $foot-back-icon;
+  color: $fons-html;
+  transition: background-color $transf-hover;
+  &:hover,
+  &:focus {
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color $transf-hover;
+    background: $hover-color;
+    color: $fons-html;
+  }
+}
+
+.foot-icon-url:hover .icon,
+.foot-icon-url:focus .icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
