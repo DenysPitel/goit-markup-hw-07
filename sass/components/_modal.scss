@@ -1,3 +1,6 @@
+/* Backdrop, Modal
+=================== */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -12,10 +15,9 @@
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-}
-
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0);
+  & .modal {
+    transform: translate(-50%, -50%) scale(0);
+  }
 }
 
 .modal {
@@ -139,6 +141,10 @@
   display: inline-block;
   align-self: center;
   margin-bottom: 30px;
+  &:hover > .modal-form-checkbox,
+  &:focus > .modal-form-checkbox {
+    border-color: $hover-color;
+  }
 }
 
 .modal-form-checkbox {
@@ -150,11 +156,6 @@
   border: 2px solid $text-color;
   border-radius: 2px;
   transition: border $transf-hover;
-}
-
-.modal-form-check-cont:hover > .modal-form-checkbox,
-.modal-form-check-cont:focus > .modal-form-checkbox {
-  border-color: $hover-color;
 }
 
 .modal-form-check-inp:checked + .modal-form-checkbox {

@@ -1,0 +1,82 @@
+/* Features
+=================== */
+
+.features-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
+.features-elem {
+  box-sizing: border-box;
+  background: $fons-html;
+  border: 1px solid $border-color;
+}
+
+.features-item > .features-elem {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.card {
+  display: block;
+  transition: box-shadow $transf-hover;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    border: 1px solid $border-color;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: box-shadow $transf-hover;
+  }
+
+  &:hover .card-text-cont,
+  &:focus .card-text-cont {
+    transform: translateY(0);
+    transition: transform $transf-hover;
+  }
+
+  & .card-feat-cont {
+    padding: 20px 25px;
+  }
+}
+
+.card-feat {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-text-cont {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: translateY(100%);
+  transition: transform $transf-hover;
+  background-color: $proj-back-hover;
+}
+
+.card-text {
+  position: absolute;
+  font-size: 18px;
+  line-height: 1.555em;
+  padding: 63px 24px;
+  color: $fons-html;
+}
+
+.features-title {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2em;
+}
+
+.features-text {
+  font-size: 16px;
+  line-height: 1.9em;
+  color: $contacts-color;
+}

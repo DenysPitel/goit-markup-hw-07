@@ -1,0 +1,38 @@
+/* Clients
+=================== */
+
+.clients-item {
+  display: flex;
+  margin-left: -30px;
+
+  & > .clients-elem {
+    flex-basis: calc(100% / 6);
+    margin-left: 30px;
+  }
+}
+
+.clients-url {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 1px solid $icon-color;
+  color: $icon-color;
+  transition: color $transf-hover, border $transf-hover;
+
+  &:hover,
+  &:focus {
+    transition: color $transf-hover, border $transf-hover;
+    color: $hover-color;
+    border-color: $hover-color;
+  }
+}
+
+.clients-icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
