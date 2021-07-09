@@ -8,17 +8,6 @@
   }
 }
 
-.logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2em;
-  text-decoration: none;
-  color: $hover-color;
-  & .logo__text {
-    color: $logo-color;
-  }
-}
 .site-nav .site-nav__list {
   display: flex;
   padding-left: 0;
@@ -28,13 +17,16 @@
   line-height: 1.1em;
   color: inherit;
 }
+
 .site-nav__item {
   position: relative;
 }
+
 .site-nav__list .site-nav__item + .site-nav__item,
 .contacts .contacts__item + .contacts__item {
   margin-left: 50px;
 }
+
 .site-nav__link:hover,
 .site-nav__link:focus {
   transition: color $transf-hover;

@@ -60,16 +60,6 @@ img {
   height: auto;
 }
 
-/* Header
-=================== */
-.page-header {
-  border-bottom: 1px solid #ececec;
-}
-
-.page-header .container {
-  display: flex;
-}
-
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -81,6 +71,16 @@ img {
 
 .logo .logo__text {
   color: #000000;
+}
+
+/* Header
+=================== */
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header .container {
+  display: flex;
 }
 
 .site-nav .site-nav__list {
