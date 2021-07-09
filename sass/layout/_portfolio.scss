@@ -1,26 +1,26 @@
-/* Features
+/* Portfolio card
 =================== */
 
-.features-item {
+.card__list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-bottom: -30px;
 }
 
-.features-elem {
+.card__item {
   box-sizing: border-box;
   background: $fons-html;
   border: 1px solid $border-color;
 }
 
-.features-item > .features-elem {
+.card__list > .card__item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
 }
 
-.card {
+.card__link {
   display: block;
   transition: box-shadow $transf-hover;
 
@@ -34,23 +34,23 @@
     transition: box-shadow $transf-hover;
   }
 
-  &:hover .card-text-cont,
-  &:focus .card-text-cont {
+  &:hover .overlay,
+  &:focus .overlay {
     transform: translateY(0);
     transition: transform $transf-hover;
   }
 
-  & .card-feat-cont {
+  & .card-meta {
     padding: 20px 25px;
   }
 }
 
-.card-feat {
+.card__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.card-text-cont {
+.overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -60,7 +60,7 @@
   background-color: $proj-back-hover;
 }
 
-.card-text {
+.overlay__text {
   position: absolute;
   font-size: 18px;
   line-height: 1.555em;
@@ -68,14 +68,14 @@
   color: $fons-html;
 }
 
-.features-title {
+.card-meta__title {
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2em;
 }
 
-.features-text {
+.card-meta__text {
   font-size: 16px;
   line-height: 1.9em;
   color: $contacts-color;

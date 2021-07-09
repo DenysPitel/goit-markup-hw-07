@@ -1,79 +1,62 @@
 /* Team social
 =================== */
-.work-item {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-
-  & .work-elem + .work-elem {
-    margin-left: 8px;
-  }
-}
-
-.work-but {
-  padding: 6px 22px;
-  font-weight: 500;
-  line-height: 1.6em;
-  transition: box-shadow $transf-hover, background-color $transf-hover, color $transf-hover;
-  background-color: $button-color;
-  color: $text-color;
-
-  &:hover,
-  &:focus {
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition: box-shadow $transf-hover, background-color $transf-hover, color $transf-hover;
-    background-color: $hover-color;
-    color: $fons-html;
-  }
-}
-
-/* Footer social
-=================== */
-
-.foot-cocial-sect {
-  margin-left: 72px;
-}
-
-.foot-name,
-.foot-form-name {
-  margin-bottom: 20px;
-  color: $fons-html;
-}
-
-.foot-icon {
+.card-social__list {
   display: flex;
   justify-content: center;
 }
 
-.foot-icon-elem:not(:first-child) {
+.card-social__item:not(:first-child) {
   margin-left: 10px;
 }
 
-.foot-icon-url {
+.card-social__item {
   width: 44px;
   height: 44px;
+  border-radius: 50%;
+}
+
+.card-social__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50px;
-  background-color: $foot-back-icon;
-  color: $fons-html;
-  transition: background-color $transf-hover;
+  transition: background-color $transf-hover, color $transf-hover;
+  background-color: $fons-html;
+  color: $icon-color;
 
   &:hover,
   &:focus {
     border-radius: 50%;
     cursor: pointer;
-    transition: background-color $transf-hover;
-    background: $hover-color;
+    transition: background-color $transf-hover, color $transf-hover;
+    background-color: $hover-color;
     color: $fons-html;
   }
+}
 
-  &:hover .icon,
-  &:focus .icon {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
-  }
+.card-social__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Footer social
+=================== */
+
+.footer-cocial {
+  margin-left: 72px;
+}
+
+.footer-cocial__name,
+.footer-form__name {
+  margin-bottom: 20px;
+  color: $fons-html;
+}
+
+.card-social__link--teams {
+  background-color: $foot-back-icon;
+  color: $fons-html;
+  transition: background-color $transf-hover;
 }

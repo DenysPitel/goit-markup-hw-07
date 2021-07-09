@@ -32,7 +32,7 @@
   background-color: $fons-html;
 }
 
-.btn-modal-close {
+.button-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -51,7 +51,7 @@
   }
 }
 
-.icon-btn-close {
+.button-close__icon {
   position: absolute;
   transform: translate3d(-50%, -50%, 0);
   width: 11px;
@@ -63,7 +63,7 @@
   flex-direction: column;
 }
 
-.modal-form-title {
+.modal-form__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15em;
@@ -72,12 +72,12 @@
   margin-bottom: 12px;
 }
 
-.modal-form-icon-lab {
+.modal-form__label {
   position: relative;
   margin-bottom: 10px;
 }
 
-.modal-form-text {
+.modal-form__text {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.167em;
@@ -86,7 +86,7 @@
   color: $contacts-color;
 }
 
-.modal-form-inp {
+.modal-form__input {
   width: 100%;
   height: 40px;
   padding-left: 42px;
@@ -95,13 +95,13 @@
   outline: none;
   transition: border $transf-hover;
   color: $text-color;
-  &:hover + .modal-form-icon,
-  &:focus + .modal-form-icon {
+  &:hover + .modal-form__icon,
+  &:focus + .modal-form__icon {
     color: $hover-color;
   }
 }
 
-.modal-form-icon {
+.modal-form__icon {
   position: absolute;
   top: 29px;
   left: 12px;
@@ -109,7 +109,7 @@
   transition: fill $transf-hover;
 }
 
-.modal-form-comment {
+.modal-form__comment {
   font-size: 14px;
   line-height: 1.143em;
   letter-spacing: 0.01em;
@@ -127,17 +127,17 @@
   }
 }
 
-.modal-form-inp:hover,
-.modal-form-inp:focus,
-.modal-form-comment:hover,
-.modal-form-comment:focus {
+.modal-form__input:hover,
+.modal-form__input:focus,
+.modal-form__comment:hover,
+.modal-form__comment:focus {
   border-color: $hover-color;
 }
 
 /* Modal checkbox
 =================== */
 
-.modal-form-check-cont {
+.checkbox {
   display: inline-block;
   align-self: center;
   margin-bottom: 30px;
@@ -147,7 +147,7 @@
   }
 }
 
-.modal-form-checkbox {
+.checkbox__border {
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -158,12 +158,12 @@
   transition: border $transf-hover;
 }
 
-.modal-form-check-inp:checked + .modal-form-checkbox {
+.checkbox__input:checked + .checkbox__border {
   background-color: $hover-color;
   border-color: $hover-color;
 }
 
-.modal-form-checkbox-icon {
+.checkbox__icon {
   position: absolute;
   display: block;
   width: 12px;
@@ -171,7 +171,7 @@
   fill: $fons-html;
 }
 
-.modal-form-chek-text {
+.checkbox__text {
   display: inline-block;
   padding-left: 4px;
   font-size: 14px;
@@ -180,13 +180,6 @@
   color: $contacts-color;
 }
 
-.m-form-checkbox-url {
+.checkbox__link {
   color: $hover-color;
-}
-
-.modal-form-but {
-  display: block;
-  align-self: center;
-  padding: 10px 55px 10px 56px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }

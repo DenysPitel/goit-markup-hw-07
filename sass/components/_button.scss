@@ -11,7 +11,7 @@
 }
 
 .hero__button,
-.work__button,
+.portfolio-filters_button,
 .modal-form__button {
   font-size: 16px;
   letter-spacing: 0.06em;
@@ -29,4 +29,41 @@
   background-color: $but-hover-color;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)), drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   transition: background-color $transf-hover;
+}
+
+.modal-form__button--padding {
+  display: block;
+  align-self: center;
+  padding: 10px 55px 10px 56px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Button portfolio
+=================== */
+.portfolio-filters__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  & .portfolio-filters__item + .portfolio-filters__item {
+    margin-left: 8px;
+  }
+}
+
+.portfolio-filters_button {
+  padding: 6px 22px;
+  font-weight: 500;
+  line-height: 1.6em;
+  transition: box-shadow $transf-hover, background-color $transf-hover, color $transf-hover;
+  background-color: $button-color;
+  color: $text-color;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition: box-shadow $transf-hover, background-color $transf-hover, color $transf-hover;
+    background-color: $hover-color;
+    color: $fons-html;
+  }
 }
