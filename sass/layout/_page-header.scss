@@ -1,7 +1,7 @@
 /* Header
 =================== */
 
-.header {
+.page-header {
   border-bottom: 1px solid $line-color;
   & .container {
     display: flex;
@@ -15,11 +15,11 @@
   line-height: 1.2em;
   text-decoration: none;
   color: $hover-color;
-  & .head-logo-elem {
+  & .logo__text {
     color: $logo-color;
   }
 }
-.nav .nav-item {
+.site-nav .site-nav__list {
   display: flex;
   padding-left: 0;
   margin-left: 93px;
@@ -28,15 +28,15 @@
   line-height: 1.1em;
   color: inherit;
 }
-.item {
+.site-nav__item {
   position: relative;
 }
-.nav-item .item + .item,
-.nav-cont .item + .item {
+.site-nav__list .site-nav__item + .site-nav__item,
+.contacts .contacts__item + .contacts__item {
   margin-left: 50px;
 }
-.nav-elem:hover,
-.nav-elem:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
   transition: color $transf-hover;
   color: $hover-color;
 }
@@ -56,15 +56,15 @@
   }
 }
 
-.nav-elem,
-.contacts {
+.site-nav__link,
+.contacts__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   text-decoration: none;
 }
 
-.nav-cont {
+.contacts {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143em;
@@ -86,7 +86,7 @@
   fill: currentColor;
 }
 
-.contacts {
+.contacts__link {
   display: flex;
   align-items: center;
   color: $contacts-color;

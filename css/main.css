@@ -62,11 +62,11 @@ img {
 
 /* Header
 =================== */
-.header {
+.page-header {
   border-bottom: 1px solid #ececec;
 }
 
-.header .container {
+.page-header .container {
   display: flex;
 }
 
@@ -79,11 +79,11 @@ img {
   color: #2196f3;
 }
 
-.logo .head-logo-elem {
+.logo .logo__text {
   color: #000000;
 }
 
-.nav .nav-item {
+.site-nav .site-nav__list {
   display: flex;
   padding-left: 0;
   margin-left: 93px;
@@ -93,17 +93,17 @@ img {
   color: inherit;
 }
 
-.item {
+.site-nav__item {
   position: relative;
 }
 
-.nav-item .item + .item,
-.nav-cont .item + .item {
+.site-nav__list .site-nav__item + .site-nav__item,
+.contacts .contacts__item + .contacts__item {
   margin-left: 50px;
 }
 
-.nav-elem:hover,
-.nav-elem:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #2196f3;
 }
@@ -124,15 +124,15 @@ img {
   background-color: #2196f3;
 }
 
-.nav-elem,
-.contacts {
+.site-nav__link,
+.contacts__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   text-decoration: none;
 }
 
-.nav-cont {
+.contacts {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143em;
@@ -154,14 +154,14 @@ img {
   fill: currentColor;
 }
 
-.contacts {
+.contacts__link {
   display: flex;
   align-items: center;
   color: #757575;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts:hover, .contacts:focus {
+.contacts__link:hover, .contacts__link:focus {
   color: #2196f3;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -540,8 +540,8 @@ img {
 
 /* Button
 =================== */
-.title-but,
-.modal-form-but {
+.hero__button,
+.modal-form__button {
   font-weight: 700;
   line-height: 1.9em;
   padding: 10px 32px;
@@ -549,22 +549,22 @@ img {
   color: #ffffff;
 }
 
-.title-but,
-.work-but,
-.modal-form-but {
+.hero__button,
+.work__button,
+.modal-form__button {
   font-size: 16px;
   letter-spacing: 0.06em;
   border-radius: 4px;
   font-family: inherit;
   cursor: pointer;
-  border: transparent #2196f3;
+  border: #2196f3;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.title-but:hover,
-.title-but:focus,
-.modal-form-but:hover,
-.modal-form-but:focus {
+.hero__button:hover,
+.hero__button:focus,
+.modal-form__button:hover,
+.modal-form__button:focus {
   background-color: #188ce8;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)), drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -572,12 +572,12 @@ img {
 
 /* Title section
 =================== */
-.title {
+.hero {
   padding: 200px 0;
   text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #2f303a;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4)), rgba(47, 48, 58, 0.4), url(../img/background-img.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background-img.jpg);
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -587,7 +587,7 @@ img {
   background-size: cover;
 }
 
-.title-text {
+.hero__title {
   padding-bottom: 30px;
   text-transform: uppercase;
   font-weight: 900;
@@ -602,17 +602,17 @@ img {
   padding-bottom: 0;
 }
 
-.quality-item {
+.quality__list {
   display: flex;
   margin-left: -30px;
 }
 
-.quality-item > .quality-elem {
+.quality__list > .quality__item {
   flex-basis: calc(100% / 4);
   margin-left: 30px;
 }
 
-.qual-cont-icon {
+.quality__thumb {
   width: 270px;
   height: 120px;
   border-radius: 4px;
@@ -623,9 +623,9 @@ img {
   background: #f5f4fa;
 }
 
-.quality-title,
-.foot-name,
-.foot-form-name {
+.quality__title,
+.footer-cocial__name,
+.footer-form__name {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -634,7 +634,7 @@ img {
   text-transform: uppercase;
 }
 
-.quality-text {
+.quality__text {
   font-size: 14px;
   line-height: 1.7em;
   color: #757575;
@@ -642,9 +642,9 @@ img {
 
 /* Service section
 =================== */
-.services-title,
-.team-title,
-.clients-title {
+.services__title,
+.team__title,
+.clients__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2em;
@@ -652,21 +652,21 @@ img {
   text-align: center;
 }
 
-.services-item {
+.services__list {
   display: flex;
   margin-left: -30px;
 }
 
-.services-item > .services-elem {
+.services__list > .services__item {
   flex-basis: calc(100% / 3);
   margin-left: 30px;
 }
 
-.services-elem {
+.services__item {
   position: relative;
 }
 
-.services-text {
+.services__text {
   position: absolute;
   width: 100%;
   height: 70px;
@@ -689,60 +689,60 @@ img {
   background: #f5f4fa;
 }
 
-.team-item {
+.team__list {
   display: flex;
   margin-left: -30px;
 }
 
-.team-item > .team-elem {
+.team__list > .team__item {
   flex-basis: calc(100% / 4);
   margin-left: 30px;
 }
 
-.team-elem {
+.team__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background: #ffffff;
 }
 
-.card-team-cont {
+.team-card__meta {
   padding: 30px 0;
   text-align: center;
 }
 
-.team-name {
+.team-card__name {
   margin-bottom: 10px;
 }
 
-.team-name,
-.team-position {
+.team-card__name,
+.team-card__position {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2em;
   text-align: center;
 }
 
-.team-position {
+.team-card__position {
   margin-bottom: 16px;
   color: #757575;
 }
 
-.team-icon {
+.team-card__list {
   display: flex;
   justify-content: center;
 }
 
-.team-icon-elem:not(:first-child) {
+.team-card__item:not(:first-child) {
   margin-left: 10px;
 }
 
-.team-icon-elem {
+.team-card__item {
   width: 44px;
   height: 44px;
   border-radius: 50%;
 }
 
-.team-icon-url {
+.team-card__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -754,7 +754,7 @@ img {
   color: #afb1b8;
 }
 
-.team-icon-url:hover, .team-icon-url:focus {
+.team-card__link:hover, .team-card__link:focus {
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -762,7 +762,7 @@ img {
   color: #ffffff;
 }
 
-.icon {
+.team-card__icon {
   width: 20px;
   height: 20px;
   fill: currentColor;

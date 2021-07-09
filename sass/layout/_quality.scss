@@ -5,17 +5,17 @@
   padding-bottom: 0;
 }
 
-.quality-item {
+.quality__list {
   display: flex;
   margin-left: -30px;
 
-  & > .quality-elem {
+  & > .quality__item {
     flex-basis: calc(100% / 4);
     margin-left: 30px;
   }
 }
 
-.qual-cont-icon {
+.quality__thumb {
   width: 270px;
   height: 120px;
   border-radius: 4px;
@@ -26,9 +26,9 @@
   background: $button-color;
 }
 
-.quality-title,
-.foot-name,
-.foot-form-name {
+.quality__title,
+.footer-cocial__name,
+.footer-form__name {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -37,7 +37,7 @@
   text-transform: uppercase;
 }
 
-.quality-text {
+.quality__text {
   font-size: 14px;
   line-height: 1.7em;
   color: $contacts-color;

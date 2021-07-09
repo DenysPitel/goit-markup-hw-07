@@ -1,12 +1,12 @@
 /* Title section
 =================== */
 
-.title {
+.hero {
   padding: 200px 0;
   text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: $fons-title-color;
-  background-image: linear-gradient(to right, $fons-title-img), $fons-title-img,
+  background-image: linear-gradient(to right, $fons-title-img, $fons-title-img),
     url(../img/background-img.jpg);
   max-width: 1600px;
   height: 600px;
@@ -17,7 +17,7 @@
   background-size: cover;
 }
 
-.title-text {
+.hero__title {
   padding-bottom: 30px;
   text-transform: uppercase;
   font-weight: 900;
